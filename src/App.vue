@@ -1,15 +1,21 @@
 <template>
   <Hero />
+  <Programs />
+  <Reasons />
 </template>
 
 <script>
-import Hero from './components/Hero.vue'
+import Hero from "./components/Hero.vue"
+import Programs from "./components/Programs.vue"
+import Reasons from "./components/Reasons.vue"
 
 export default {
   name: 'App',
 
   components: {
-    Hero
+    Hero,
+    Programs,
+    Reasons
   }
 }
 </script>
@@ -21,7 +27,7 @@ export default {
   --orange: #f48915;
   --darkGrey: #464D53;
   --caloryCard: #656565;
-  --planCard: linear-gradient(210.41deg, #fa5042 1.14%, #ffa739 100.75%);
+  --planCard: linear-gradient(210.41deg,#fa5042 1.14%,#ffa739 100.75%);
   --appColor:  #3c3f45;
 }
 
@@ -48,7 +54,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-h1 {
+h1, h2, h3, h4, h5, h6, ul {
   margin: 0;
 }
 

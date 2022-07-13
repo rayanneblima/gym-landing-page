@@ -2,12 +2,14 @@
   <Hero />
   <Programs />
   <Reasons />
+  <Plans />
 </template>
 
 <script>
 import Hero from "./components/Hero.vue"
 import Programs from "./components/Programs.vue"
 import Reasons from "./components/Reasons.vue"
+import Plans from "./components/Plans.vue"
 
 export default {
   name: 'App',
@@ -15,7 +17,8 @@ export default {
   components: {
     Hero,
     Programs,
-    Reasons
+    Reasons,
+    Plans
   }
 }
 </script>
@@ -68,6 +71,19 @@ code {
   -webkit-text-stroke-color: white;
   -webkit-text-stroke-width: 1px;
 }
+
+.stroke-header {
+  color: #fff;
+  font-size: 3rem;
+  font-style: italic;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  display: flex;
+  gap: 4rem;
+  justify-content: center;
+}
+
 
 .btn {
   font-weight: bold;

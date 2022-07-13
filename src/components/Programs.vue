@@ -1,6 +1,6 @@
 <template>
   <section class="programs">
-    <header>
+    <header class="stroke-header">
       <span class="stroke-text">Explore our</span>
       <span>Programs</span>
       <span class="stroke-text">To shape you</span>
@@ -55,18 +55,6 @@ export default defineComponent({
   padding: 0 2rem;
 }
 
-header {
-  color: white;
-  font-size: 3rem;
-  font-style: italic;
-  font-weight: bold;
-  text-transform: uppercase;
-
-  display: flex;
-  gap: 4rem;
-  justify-content: center;
-}
-
 .categories-programs {
   display: flex;
   gap: 1rem;
@@ -92,11 +80,6 @@ header {
   height: 2rem;
   fill: white;
   width: 2rem;
-}
-
-.category > :nth-child(1) > svg {
-  height: 100%;
-  width: 100%;
 }
 
 .category > :nth-child(2) {

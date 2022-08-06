@@ -1,5 +1,7 @@
 <template>
   <main class="hero">
+    <div class="blur hero-blur"></div>
+
     <section class="left-hero">
       <Header />
 
@@ -97,6 +99,12 @@ export default defineComponent({
 main {
   display: flex;
   justify-content: space-between;
+}
+
+.hero-blur {
+  height: 30rem;
+  left: 0;
+  width: 22rem;
 }
 
 .left-hero {

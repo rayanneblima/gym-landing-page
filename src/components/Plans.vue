@@ -1,5 +1,8 @@
 <template>
   <section class="plans">
+    <div class="blur plans-blur-left"></div>
+    <div class="blur plans-blur-right"></div>
+
     <header class="stroke-header">
       <span class="stroke-text">Ready to start</span>
       <span>Your Journey</span>
@@ -68,6 +71,20 @@ export default defineComponent({
   margin-top: -4rem;
   padding: 0 2rem;
   position: relative;
+}
+
+.plans-blur-left {
+  height: 24rem;
+  left: 0;
+  top: 6rem;
+  width: 32rem;
+}
+
+.plans-blur-right {
+  height: 24rem;
+  right: 0;
+  top: 10rem;
+  width: 32rem;
 }
 
 .prices-plans {

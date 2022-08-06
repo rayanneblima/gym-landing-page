@@ -74,6 +74,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
+.blur {
+  background: rgba(253, 120, 43, 0.69);
+  border-radius: 50%;
+  filter: blur(212px);
+  position: absolute;
+  z-index: -9;
+}
+
 .stroke-text {
   color: transparent;
   font-family: Arial, Helvetica, sans-serif;
@@ -92,7 +100,6 @@ code {
   gap: 4rem;
   justify-content: center;
 }
-
 
 .btn {
   font-weight: bold;

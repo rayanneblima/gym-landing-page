@@ -26,6 +26,9 @@
         />
       </div>
     </div>
+
+    <div class="blur footer-blur-left"></div>
+    <div class="blur footer-blur-right"></div>
   </footer>
 </template>
 
@@ -69,5 +72,25 @@ footer > hr {
 
 .logo-app > img {
   width: 10rem;
+}
+
+.footer-blur-left {
+  background: rgb(255, 115, 0);
+  filter: blur(200px);
+
+  bottom: 0;
+  height: 12rem;
+  left: 15%;
+  width: 26rem;
+}
+
+.footer-blur-right {
+  background: red;
+  filter: blur(200px);
+
+  bottom: 0;
+  height: 12rem;
+  right: 15%;
+  width: 26rem;
 }
 </style>

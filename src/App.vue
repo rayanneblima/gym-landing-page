@@ -5,6 +5,7 @@
   <Plans />
   <Testimonials />
   <JoinUs />
+  <Footer />
 </template>
 
 <script>
@@ -14,6 +15,7 @@ import Reasons from "./components/Reasons.vue"
 import Plans from "./components/Plans.vue"
 import Testimonials from "./components/Testimonials.vue"
 import JoinUs from "./components/JoinUs.vue"
+import Footer from "./components/Footer.vue"
 
 export default {
   name: 'App',
@@ -25,6 +27,7 @@ export default {
     Plans,
     Testimonials,
     JoinUs,
+    Footer,
   }
 }
 </script>

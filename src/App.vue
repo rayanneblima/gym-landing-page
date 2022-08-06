@@ -3,6 +3,7 @@
   <Programs />
   <Reasons />
   <Plans />
+  <Testimonials />
 </template>
 
 <script>
@@ -10,6 +11,7 @@ import Hero from "./components/Hero.vue"
 import Programs from "./components/Programs.vue"
 import Reasons from "./components/Reasons.vue"
 import Plans from "./components/Plans.vue"
+import Testimonials from "./components/Testimonials.vue"
 
 export default {
   name: 'App',
@@ -18,7 +20,8 @@ export default {
     Hero,
     Programs,
     Reasons,
-    Plans
+    Plans,
+    Testimonials,
   }
 }
 </script>

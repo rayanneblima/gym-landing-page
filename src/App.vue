@@ -4,6 +4,7 @@
   <Reasons />
   <Plans />
   <Testimonials />
+  <JoinUs />
 </template>
 
 <script>
@@ -12,6 +13,7 @@ import Programs from "./components/Programs.vue"
 import Reasons from "./components/Reasons.vue"
 import Plans from "./components/Plans.vue"
 import Testimonials from "./components/Testimonials.vue"
+import JoinUs from "./components/JoinUs.vue"
 
 export default {
   name: 'App',
@@ -22,6 +24,7 @@ export default {
     Reasons,
     Plans,
     Testimonials,
+    JoinUs,
   }
 }
 </script>

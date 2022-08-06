@@ -14,11 +14,12 @@
     </div>
 
     <div class="right-join-us">
-      <form class="email-form">
+      <form class="email-form" ref="form" @submit.prevent="sendEmail">
         <input
           type="email"
           name="user_email"
           placeholder="Enter your e-mail address here"
+          :disabled="mustDisableEmailField"
           required
         />
 
@@ -31,12 +32,34 @@
 </template>
 
 <script>
-import { defineComponent } from "vue";
+import { defineComponent, ref } from "vue";
+import emailjs from 'emailjs-com';
 
 export default defineComponent({
   name: 'JoinUsSection',
 
-  // TODO: emailJS
+  setup () {
+    const form = ref(null);
+    const mustDisableEmailField = ref(false);
+
+    const sendEmail = () => {
+      emailjs.sendForm('service_jekgvx1', 'template_uv3liai', form.value,
+      'user_wlzu1KQ4lelekgwxR8bEW')
+      .then((result) => {
+        console.log(result.text);
+        alert(result.text);
+        mustDisableEmailField.value = true;
+      }, (error) => {
+        console.log(error.text);
+      })
+    };
+
+    return {
+      form,
+      sendEmail,
+      mustDisableEmailField,
+    }
+  }
 })
 </script>
 
@@ -91,6 +114,10 @@ export default defineComponent({
 
 ::placeholder {
   color: var(--lightgray);
+}
+
+.email-form > input:disabled {
+  cursor: not-allowed;
 }
 
 .email-form > button {
